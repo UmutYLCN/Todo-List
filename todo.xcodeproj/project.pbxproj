@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60DBD8E29CB6CEF0064C003 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DBD8D29CB6CEF0064C003 /* UITextField+Extension.swift */; };
 		B610326E29B6719600602C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610326D29B6719600602C20 /* AppDelegate.swift */; };
 		B610327029B6719600602C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610326F29B6719600602C20 /* SceneDelegate.swift */; };
-		B610327229B6719600602C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610327129B6719600602C20 /* ViewController.swift */; };
-		B610327529B6719600602C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B610327329B6719600602C20 /* Main.storyboard */; };
+		B610327229B6719600602C20 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610327129B6719600602C20 /* MainVC.swift */; };
 		B610327829B6719600602C20 /* todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B610327629B6719600602C20 /* todo.xcdatamodeld */; };
 		B610327A29B6719700602C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B610327929B6719700602C20 /* Assets.xcassets */; };
 		B610327D29B6719700602C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B610327B29B6719700602C20 /* LaunchScreen.storyboard */; };
+		B61DE04E29C374CB0056F28C /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DE04D29C374CB0056F28C /* TodoModel.swift */; };
+		B6432AAF29B68E32007FA1F7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B6432AAE29B68E32007FA1F7 /* SnapKit */; };
+		B67B66A629B940E200C7756D /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B67B66A529B940E200C7756D /* FSCalendar */; };
+		B689594729B7AF94000B01A9 /* AddTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689594629B7AF94000B01A9 /* AddTodoVC.swift */; };
+		B6E8209429CA2650008FA828 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8209229CA2650008FA828 /* TodoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60DBD8D29CB6CEF0064C003 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		B610326A29B6719600602C20 /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B610326D29B6719600602C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B610326F29B6719600602C20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B610327129B6719600602C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B610327429B6719600602C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B610327129B6719600602C20 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B610327729B6719600602C20 /* todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = todo.xcdatamodel; sourceTree = "<group>"; };
 		B610327929B6719700602C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B610327C29B6719700602C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B610327E29B6719700602C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61DE04D29C374CB0056F28C /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		B689594629B7AF94000B01A9 /* AddTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoVC.swift; sourceTree = "<group>"; };
+		B6E8209229CA2650008FA828 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +41,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6432AAF29B68E32007FA1F7 /* SnapKit in Frameworks */,
+				B67B66A629B940E200C7756D /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60D8E3A29CBC10D0023D287 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B610326D29B6719600602C20 /* AppDelegate.swift */,
+				B610326F29B6719600602C20 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		B610326129B6719600602C20 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +77,50 @@
 		B610326C29B6719600602C20 /* todo */ = {
 			isa = PBXGroup;
 			children = (
-				B610326D29B6719600602C20 /* AppDelegate.swift */,
-				B610326F29B6719600602C20 /* SceneDelegate.swift */,
-				B610327129B6719600602C20 /* ViewController.swift */,
-				B610327329B6719600602C20 /* Main.storyboard */,
+				B60D8E3A29CBC10D0023D287 /* App */,
+				B610328429B674FB00602C20 /* Models */,
+				B610328529B6750400602C20 /* Views */,
+				B610328629B6750D00602C20 /* Controller */,
+				B6DE684B29BA4D4B0033EDAF /* Extension */,
 				B610327929B6719700602C20 /* Assets.xcassets */,
 				B610327B29B6719700602C20 /* LaunchScreen.storyboard */,
-				B610327E29B6719700602C20 /* Info.plist */,
 				B610327629B6719600602C20 /* todo.xcdatamodeld */,
+				B610327E29B6719700602C20 /* Info.plist */,
 			);
 			path = todo;
+			sourceTree = "<group>";
+		};
+		B610328429B674FB00602C20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B61DE04D29C374CB0056F28C /* TodoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B610328529B6750400602C20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6E8209229CA2650008FA828 /* TodoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B610328629B6750D00602C20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B610327129B6719600602C20 /* MainVC.swift */,
+				B689594629B7AF94000B01A9 /* AddTodoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6DE684B29BA4D4B0033EDAF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B60DBD8D29CB6CEF0064C003 /* UITextField+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +139,10 @@
 			dependencies = (
 			);
 			name = todo;
+			packageProductDependencies = (
+				B6432AAE29B68E32007FA1F7 /* SnapKit */,
+				B67B66A529B940E200C7756D /* FSCalendar */,
+			);
 			productName = todo;
 			productReference = B610326A29B6719600602C20 /* todo.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +171,10 @@
 				Base,
 			);
 			mainGroup = B610326129B6719600602C20;
+			packageReferences = (
+				B6432AAD29B68E32007FA1F7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B67B66A429B940E200C7756D /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = B610326B29B6719600602C20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +191,6 @@
 			files = (
 				B610327D29B6719700602C20 /* LaunchScreen.storyboard in Resources */,
 				B610327A29B6719700602C20 /* Assets.xcassets in Resources */,
-				B610327529B6719600602C20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +201,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B610327229B6719600602C20 /* ViewController.swift in Sources */,
+				B610327229B6719600602C20 /* MainVC.swift in Sources */,
+				B689594729B7AF94000B01A9 /* AddTodoVC.swift in Sources */,
 				B610326E29B6719600602C20 /* AppDelegate.swift in Sources */,
 				B610327029B6719600602C20 /* SceneDelegate.swift in Sources */,
+				B61DE04E29C374CB0056F28C /* TodoModel.swift in Sources */,
+				B60DBD8E29CB6CEF0064C003 /* UITextField+Extension.swift in Sources */,
 				B610327829B6719600602C20 /* todo.xcdatamodeld in Sources */,
+				B6E8209429CA2650008FA828 /* TodoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B610327329B6719600602C20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B610327429B6719600602C20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B610327B29B6719700602C20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +352,6 @@
 				INFOPLIST_FILE = todo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +379,6 @@
 				INFOPLIST_FILE = todo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +416,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6432AAD29B68E32007FA1F7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		B67B66A429B940E200C7756D /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6432AAE29B68E32007FA1F7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6432AAD29B68E32007FA1F7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B67B66A529B940E200C7756D /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B67B66A429B940E200C7756D /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B610327629B6719600602C20 /* todo.xcdatamodeld */ = {
